@@ -13,18 +13,18 @@ router.get('/home', function(req, res, next) {
 
 /* GET about page. */
 router.get('/about', function(req, res, next) {
-  res.render('index', { title: 'ABOUT' });
+  res.render('about', { title: 'ABOUT' });
 });
 
-/* GET projects page. */
+/* GET project page. */
 router.get('/projects', function(req, res, next) {
-  res.render('index', { title: 'PROJECTS' });
+  res.render('projects', { title: 'PROJECTS' });
 });
 
 
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'CONTACT' });
+  res.render('contact', { title: 'CONTACT' });
 });
 
 module.exports = router;

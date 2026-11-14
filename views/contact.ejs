@@ -1,0 +1,47 @@
+<!-- Adding the header and nav bar to the top of the contact page-->
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+<!-- container for the form-->
+<div class="container mt-4 mb-4"> 
+    <form>
+        <!--Firstname input field-->
+        <div class="mb-3">
+            <label for="FName" class="form-label">First Name:</label>
+            <input type="text" class="form-control" id="FName" name="FName" required>
+        </div>
+
+        <!--Lastname input field-->
+        <div class="mb-3">
+            <label for="LName" class="form-label">Last Name:</label>
+            <input type="text" class="form-control" id="LName" name="LName" required>
+        </div>
+        
+        <!--Email input field with format checking-->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+            <div id="emailHelp" class="form-text"></div>
+        </div>
+
+        <!--Phone number input field-->
+    
+        <div class="mb-3">
+            <label for="Phone" class="form-label">Phone Number:</label>
+            <input type="tel" class="form-control" id="Phone" name="Phone">
+            
+        </div>
+        
+        <!--Textarea for comments allowing multi line user messages-->
+        <div class="mb-3">
+          <label for="comments" class="form-label">Comments:</label>
+          <textarea class="form-control" id="comments" name="comments" rows="4" required></textarea>
+        </div>
+
+        <!--buttons to submit form data or reset data fields-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+    </form>
+    
+</div>
+<%- include partials/footer.ejs %>   
