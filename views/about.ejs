@@ -1,5 +1,46 @@
-<!-- Adding the header and nav bar to the top of the contact page-->
+<!-- Adding the header and nav bar to the top of the about page-->
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
 
+<!--Container for the about me pagecontent-->
+<div class="container mt-4 mb-4">
+    <div class="text-center mb-3">
+        <h1><%= title %></h1>
+        <p class="lead">A little about me and my interests.</p>
+    </div>
+    <!--Introduction about me-->
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h2 class="card-title">Who I Am</h2>
+                    <p>
+                        I am an Information Technology student at Ontario Tech University, pursing a degree in Networking and IT Security.
+                    </p>
+                    <p>
+                        I enjoy learning how computer systems work, solving technical problems, and developing my programming skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Skills and Interests -->
+        <div class="col-md-6">
+            <div class="card shadow-sm h-100">
+                <div class="card-body">
+                    <h2 class="card-title">My Interests & Skills</h2>
+                    <!--List of some skills-->
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Networking</li>
+                        <li class="list-group-item">Cybersecurity</li>
+                        <li class="list-group-item">Python Programming </li>
+                        <li class="list-group-item">HTML, CSS, and JavaScript</li>
+                        <li class="list-group-item">Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Footer-->
 <%- include partials/footer.ejs %>   
