@@ -8,7 +8,7 @@
         <h1><%= title %></h1>
         <p class="lead">Have any inquries, fill the form bellow?</p>
     </div>
-    <form>
+    <form action="/submit" method="POST">
         <!--Firstname input field-->
         <div class="mb-3">
             <label for="FName" class="form-label">First Name:</label>
@@ -48,4 +48,5 @@
     </form>
     
 </div>
+<!--Shared footer-->
 <%- include partials/footer.ejs %>   

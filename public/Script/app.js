@@ -1,4 +1,3 @@
-//IIFI immediately incoled function expression
 (function()
 {
     function Start(){

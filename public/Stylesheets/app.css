@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/*styling for the whole page*/
+body{
+    background-color: #f4f6f9 !important;
+    color:#212529 !important;
+    font-family:Georgia, 'Times New Roman', Times, serif !important; 
+}
