@@ -28,4 +28,3 @@ router.get('/contact', function(req, res, next) {
 });
 
 module.exports = router;
-//MVC model(datebase) view(ejs filed) controller(routers)
